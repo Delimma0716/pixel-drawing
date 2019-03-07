@@ -7,6 +7,7 @@ const app = Express()
 const http = Server(app)
 const io = SocketIO(http)
 app.use(urlencodedParser({ extended: true }))
+app.use(Express.static(__dirname))
 
 const PaintBoardSizeX = 200
 const PaintBoardSizeY = 100
