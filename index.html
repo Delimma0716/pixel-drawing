@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>绘板</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
   <h1>绘板</h1>
+  <div class="window">
+    <canvas id="canvas" width="800" height="400"></canvas>
+    <div id="brush"></div>
+  </div>
+  <div class="color-disk">
+    色盘
+    <div class="grid-black"></div>
+    <div class="grid-white"></div>
+    <div class="grid-gray"></div>
+  </div>
   <!-- TODO -->
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="./paint.js" type="module"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+  <script src="./ajax-config.js"></script>
+  <script src="./paint.js"></script>
 </body>
 
 </html>
