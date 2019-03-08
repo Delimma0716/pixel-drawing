@@ -12,15 +12,16 @@ body {
   height: 400px;
   border: 10px solid pink;
   margin: 0 auto;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 10px;
   position: relative;
 }
 
-.canvas-large {
-  transform: scale(4);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
+#canvas {
+  /* pointer-events: none; */
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #brush {
@@ -31,8 +32,8 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
+  /* pointer-events: auto; */
 }
-
 
 .color-disk {
   position: fixed;
